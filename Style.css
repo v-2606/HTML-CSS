@@ -1,0 +1,94 @@
+﻿/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Container */
+.container {
+    width: 450px; /* Box width increased */
+    position: relative;
+    text-align: center;
+}
+
+/* Form Box */
+.form-box {
+    background: white; /* White Box */
+    padding: 40px; /* Increased padding */
+    border-radius: 15px; /* Slightly more rounded corners */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Softer and bigger shadow */
+    width: 100%;
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hide Register Form Initially */
+.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+/* Show Form */
+.show {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+}
+
+/* Input Fields */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px; /* Increased spacing */
+}
+
+label {
+    display: block;
+    font-size: 16px; /* Bigger font */
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Bigger input field */
+    border: 2px solid #ccc; /* Slightly thicker border */
+    border-radius: 8px;
+    font-size: 16px; /* Bigger font */
+}
+
+/* Blue Login/Register Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Blue */
+    border: none;
+    color: white;
+    font-size: 18px; /* Bigger font */
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Toggle Text */
+.toggle-text {
+    margin-top: 20px;
+    font-size: 16px; /* Bigger font */
+}
+
+.toggle-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
